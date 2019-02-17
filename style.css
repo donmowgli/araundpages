@@ -15,6 +15,10 @@ html, body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 .landing-text h1 {
     font-size: 500%;

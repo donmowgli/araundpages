@@ -4,7 +4,7 @@ html, body {
 }
 
 #home {
-    background: url(img/perkele.jpg) no-repeat center center fixed;
+    background: url(img/tausta1.jpg) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -27,7 +27,7 @@ html, body {
     width: 100%
 }
 #fixed {
-    background: url(img/perkele2.jpg) no-repeat center center fixed;
+    background: url(img/tausta2.jpg) no-repeat center center fixed;
     display: table;
     height: 60%;
     position: relative;

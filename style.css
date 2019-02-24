@@ -13,7 +13,7 @@ html, body {
 
 }
 .navbar-default .navbar-nav li a {
-    color: green;
+    color: #FFF;
 }
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:active {
     color: FFF;
@@ -30,10 +30,7 @@ html, body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: black;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    color: #1a1a1a;
 }
     .landing-text h1 {
     font-size: 500%;
@@ -53,6 +50,9 @@ html, body {
     width: 100%;
     background-size: cover;
 }
+.row{
+    text-align: center;
+}
 footer {
     width: 100%;
     background-color: darkgreen;
@@ -63,6 +63,10 @@ footer {
     padding: 15px;
     font-size: 25px;
     color: #FFF;
+}
+.fa:hover{
+    color: #FFF;
+    text-decoration: none;
 }
 .icon {
     max-width: 200px;

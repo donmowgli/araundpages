@@ -2,27 +2,73 @@
 <html>
 <head>
     <title>Araund</title>
+
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="description" content="Pyörien vertaisvuokraamista kaikille.">
     <meta name="keywords" content="Pyörä, P2P, vuokraus, lähiliikenne, Jyväskylä">
     <meta name="author" content="Akseli Jaara">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
     
 </head>
 
 <body>
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#kayttaja">Käyttäjälle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#vuokraaja">Vuokraajalle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#about">Toiminta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#tiimi">Tiimi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#contact">Ota yhteyttä</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Landing text -->
     <div id="home">
         <div class="landing-text">
             <h1>ARAUND</h1>
-            <h3>Parempaa lähiliikkumista pyörien vertaisvuokraamisella</h3>
         </div>
     </div>
 
+    <!-- Ensimmäiset infot -->
     <div class="padding">
     <div class="container">
         <div class="row">
@@ -30,7 +76,7 @@
                 <img src="img/kuva1.jpg">
             </div>
             <div class="col-sm-6 text-center">
-                <h2>Aidosti käsilläsi.</h2>
+                <h2 id="kayttaja">Aidosti käsilläsi.</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
             </div>
         </div>
@@ -39,11 +85,12 @@
 
     <hr>
 
+    <!-- Toiset infot -->
     <div class="padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 text-center">
-                <h2>Uutta taloutta olemassaolevilla resursseilla</h2>
+                <h2 id="vuokraaja">Uutta taloutta olemassaolevilla resursseilla</h2>
                 <p class="lead">Morbi risus erat, tincidunt vitae hendrerit vel, vestibulum ac velit. Donec vitae ligula eleifend, volutpat neque ut, suscipit felis. Phasellus libero dolor, aliquet at mauris at, aliquam congue elit. Sed porta pulvinar arcu at finibus. Morbi quam sapien, posuere in viverra eget, placerat et tellus. Ut venenatis quam vel feugiat dignissim. Quisque justo est, mollis vitae eros a, pharetra tempus purus. Morbi ac pulvinar neque, a efficitur nisi. Cras ultrices risus in maximus auctor. Donec vitae libero commodo, ultricies risus eu, hendrerit lectus. Phasellus tincidunt feugiat risus non accumsan. Proin aliquam nisl hendrerit scelerisque semper. Morbi venenatis vitae magna non elementum.  </p>
             </div>
             <div class="col-sm-6">
@@ -55,12 +102,13 @@
     
     <hr>
 
+    <!-- Esimerkki vuokrauksesta -->
     <div class="padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/akseli.JPG" class="img-responsive">
-                <h4">AKSELI JAARA</h4>
+                <img src="img/akseli.JPG" class="img-responsive" id="About">
+                <h4>AKSELI JAARA</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -77,10 +125,11 @@
     </div>
     </div>
 
+<!-- Footer -->
 <footer class="container-fluid text-center">
     <div class="row">
         <div class="col-sm-4">
-            <h3>Ota yhteyttä</h3>
+            <h3 id="contact">Ota yhteyttä</h3>
             <br>
             <h4>Info tähän</h4>
         </div>

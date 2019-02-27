@@ -9,29 +9,25 @@
     <meta name="keywords" content="Pyörä, P2P, vuokraus, lähiliikenne, Jyväskylä">
     <meta name="author" content="Akseli Jaara">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon">
+    <link rel="icon" href="img/favicon.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- Javascript-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scroll.js"></script>
     <script>
-    $(document).ready(function(){
- 
-        // hide our element on page load
-        $('#element-to-animate').css('opacity', 0);
-
-        $('#element-to-animate').waypoint(function() {
-            $('#element-to-animate').addClass('fadeInLeft');
-        }, { offset: '50%' });
-
+    $(function() {
+        AOS.init();
     });
     </script>
-    
 </head>
 
 <body>
@@ -42,25 +38,25 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse active" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#home">Home</a>
+                        <a class="nav-link js-scroll-trigger" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#kayttaja">Käyttäjälle</a>
+                        <a class="nav-link js-scroll-trigger" href="#kayttaja">Käyttäjälle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#vuokraaja">Vuokraajalle</a>
+                        <a class="nav-link js-scroll-trigger" href="#vuokraaja">Vuokraajalle</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#about">Toiminta</a>
+                        <a class="nav-link js-scroll-trigger" href="#about">Toiminta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#team">Tiimi</a>
+                        <a class="nav-link js-scroll-trigger" href="#team">Tiimi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#contact">Ota yhteyttä</a>
+                        <a class="nav-link js-scroll-trigger" href="#contact">Ota yhteyttä</a>
                     </li>
                 </ul>
             </div>
@@ -82,11 +78,11 @@
         <div class="row">
             <div class="col-sm-6">
                 <br>
-                <img src="img/kuva1.jpg" class="stock animated fadeInLeft">
+                <img src="img/kuva1.jpg" class="stock" data-aos="fade-right">
             </div>
             <div class="col-sm-6 text-center">
                 <h2>Aidosti käsilläsi.</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                <p class="lead">Araund haluaa tuoda käsiesi ulottuville uudenlaisen tavan liikkua nykyaikaisessa kaupunkiympäristössä – toimimaton joukkoliikenne ja autoilukaan ei välttämättä ole aina ratkaisu. Haluammekin tuoda uudenlaisen kaupunkipyöräilyn jokaisen saataville pyörien vertaisvuokraamisen avulla. Mitä jos voisit ottaa pyörän sieltä missä ikinä liikutkin, ja jättää sen mihin ikinä saavutkin? Me haluamme tehdä siitä mahdollista.</p>
             </div>
         </div>
     </div>
@@ -99,12 +95,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 text-center">
-                <h2>Uutta taloutta olemassaolevilla resursseilla</h2>
-                <p class="lead">Morbi risus erat, tincidunt vitae hendrerit vel, vestibulum ac velit. Donec vitae ligula eleifend, volutpat neque ut, suscipit felis. Phasellus libero dolor, aliquet at mauris at, aliquam congue elit. Sed porta pulvinar arcu at finibus. Morbi quam sapien, posuere in viverra eget, placerat et tellus. Ut venenatis quam vel feugiat dignissim. Quisque justo est, mollis vitae eros a, pharetra tempus purus. Morbi ac pulvinar neque, a efficitur nisi. Cras ultrices risus in maximus auctor. Donec vitae libero commodo, ultricies risus eu, hendrerit lectus. Phasellus tincidunt feugiat risus non accumsan. Proin aliquam nisl hendrerit scelerisque semper. Morbi venenatis vitae magna non elementum.  </p>
+                <h2>Uudenlaista taloutta olemassa olevilla resursseilla</h2>
+                <p class="lead">Suomessa on noin 3.5 miljoonaa pyörää, joista suurin osa lojuu häkkivarastoissa ja autotalleissa enemmän tai vähemmän käyttämättömänä 300 päivää vuodessa. Olit sitten aktiivisempi pyöräilijä, tai löytyisipä vaikka autotallistasi täysin käyttämätön kakkospyörä, mitä jos laittaisit sen vuokralle, tekemään itsellesi rahaa?</p>
             </div>
             <div class="col-sm-6">
                     <br>
-                    <img src="img/kuva2.jpg" class="stock animated fadeInRight">
+                    <img src="img/kuva2.jpg" class="stock animated fadeInRight" data-aos="fade-left">
             </div>
         </div>
     </div>
@@ -117,25 +113,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/akseli.JPG" class="img-responsive snapshots animated fadeInUp">
+                <img src="img/phase1.png" class="img-responsive snapshots" data-aos="fade-up">
                 <br>
                 <br>
-                <h4>AKSELI JAARA</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                <h4>ETSI</h4>
+                <p>Etsimme sinulle lähimmän vapaana olevan polkupyörän käyttöösi, missä ikinä liikutkin</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/teemu.JPG" class="img-responsive snapshots animated fadeInUp delay-1s">
+                <img src="img/phase2.png" class="img-responsive snapshots" data-aos="fade-up" data-aos-delay="500">
                 <br>
                 <br>
-                <h4>TEEMU HYYTIÄINEN</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                <h4>VALITSE</h4>
+                <p>Valitse itsellesi ja tarkoitukseesi sopiva pyörä – mahdollisimman yksinkertaisesti</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/miika.JPG" class="img-responsive snapshots animated fadeInUp delay-2s">
+                <img src="img/phase3.png" class="img-responsive snapshots" data-aos="fade-up" data-aos-delay="1000">
                 <br>
                 <br>
-                <h4>MIIKA KULMALA</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                <h4>AJA</h4>
+                <p>Lukko avautuu! Näin helppoa se on, olet valmis liikkumaan!</p>
             </div>
         </div>
     </div>
@@ -155,28 +151,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <img src="img/akseli.JPG" class="img-responsive profile">
+                    <img src="img/akseli.JPG" class="img-responsive profile" data-aos="fade-in">
                     <br>
                     <h4>AKSELI JAARA</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                    <p>Titteli ja/tai kuvaus?</p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <img src="img/teemu.JPG" class="img-responsive profile">
+                    <img src="img/teemu.JPG" class="img-responsive profile" data-aos="fade-in">
                     <br>
                     <h4>TEEMU HYYTIÄINEN</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                    <p>Titteli ja/tai kuvaus?</p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <img src="img/miika.JPG" class="img-responsive profile">
+                    <img src="img/miika.JPG" class="img-responsive profile" data-aos="fade-in">
                     <br>
                     <h4>MIIKA KULMALA</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                    <p>Titteli ja/tai kuvaus?</p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <img src="img/ville.JPG" class="img-responsive profile">
+                    <img src="img/ville.JPG" class="img-responsive profile" data-aos="fade-in">
                     <br>
                     <h4>VILLE YLI-PELKONEN</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                    <p>Titteli ja/tai kuvaus?</p>
                 </div>
             </div>
     </div>

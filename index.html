@@ -9,22 +9,28 @@
     <meta name="keywords" content="Pyörä, P2P, vuokraus, lähiliikenne, Jyväskylä">
     <meta name="author" content="Akseli Jaara">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <!-- Javascript -->
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/jquery.backstretch.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/retina-1.1.0.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <!-- Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+ 
+        // hide our element on page load
+        $('#element-to-animate').css('opacity', 0);
+
+        $('#element-to-animate').waypoint(function() {
+            $('#element-to-animate').addClass('fadeInLeft');
+        }, { offset: '50%' });
+
+    });
+    </script>
     
 </head>
 
@@ -51,7 +57,7 @@
                         <a class="nav-link scroll-link" href="#about">Toiminta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-link" href="#tiimi">Tiimi</a>
+                        <a class="nav-link scroll-link" href="#team">Tiimi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll-link" href="#contact">Ota yhteyttä</a>
@@ -68,56 +74,66 @@
         </div>
     </div>
 
+    <br id="kayttaja">
+
     <!-- Ensimmäiset infot -->
     <div class="padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="img/kuva1.jpg">
+                <br>
+                <img src="img/kuva1.jpg" class="stock animated fadeInLeft">
             </div>
             <div class="col-sm-6 text-center">
-                <h2 id="kayttaja">Aidosti käsilläsi.</h2>
+                <h2>Aidosti käsilläsi.</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
             </div>
         </div>
     </div>
     </div>
 
-    <hr>
+    <hr id="vuokraaja">
 
     <!-- Toiset infot -->
     <div class="padding">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 text-center">
-                <h2 id="vuokraaja">Uutta taloutta olemassaolevilla resursseilla</h2>
+                <h2>Uutta taloutta olemassaolevilla resursseilla</h2>
                 <p class="lead">Morbi risus erat, tincidunt vitae hendrerit vel, vestibulum ac velit. Donec vitae ligula eleifend, volutpat neque ut, suscipit felis. Phasellus libero dolor, aliquet at mauris at, aliquam congue elit. Sed porta pulvinar arcu at finibus. Morbi quam sapien, posuere in viverra eget, placerat et tellus. Ut venenatis quam vel feugiat dignissim. Quisque justo est, mollis vitae eros a, pharetra tempus purus. Morbi ac pulvinar neque, a efficitur nisi. Cras ultrices risus in maximus auctor. Donec vitae libero commodo, ultricies risus eu, hendrerit lectus. Phasellus tincidunt feugiat risus non accumsan. Proin aliquam nisl hendrerit scelerisque semper. Morbi venenatis vitae magna non elementum.  </p>
             </div>
             <div class="col-sm-6">
-                    <img src="img/kuva2.jpg">
+                    <br>
+                    <img src="img/kuva2.jpg" class="stock animated fadeInRight">
             </div>
         </div>
     </div>
     </div>
     
-    <hr>
+    <hr id="about">
 
     <!-- Esimerkki vuokrauksesta -->
     <div class="padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/akseli.JPG" class="img-responsive" id="About">
+                <img src="img/akseli.JPG" class="img-responsive snapshots animated fadeInUp">
+                <br>
+                <br>
                 <h4>AKSELI JAARA</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/teemu.JPG" class="img-responsive">
+                <img src="img/teemu.JPG" class="img-responsive snapshots animated fadeInUp delay-1s">
+                <br>
+                <br>
                 <h4>TEEMU HYYTIÄINEN</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img src="img/miika.JPG" class="img-responsive">
+                <img src="img/miika.JPG" class="img-responsive snapshots animated fadeInUp delay-2s">
+                <br>
+                <br>
                 <h4>MIIKA KULMALA</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
             </div>
@@ -125,25 +141,67 @@
     </div>
     </div>
 
-<!-- Footer -->
-<footer class="container-fluid text-center">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3 id="contact">Ota yhteyttä</h3>
-            <br>
-            <h4>Info tähän</h4>
-        </div>
-        <div class="col-sm-4">
-            <h3>Seuraa meitä</h3>
-            <a href="https://www.facebook.com/Araund-1501712536628451/" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/araundjkl/" class="fa fa-instagram"></a>
-            <a href="https://www.linkedin.com/company/araund/about/" class="fa fa-linkedin"></a>
-        </div>
-        <div class="col-sm-4">
-            <img src="img/logowhite.png" class="icon">
+    <!-- Landing text -->
+    <div id="back">
+        <div>
+            <h1></h1>
         </div>
     </div>
-</footer>
+
+    <br id="team">
+
+    <!-- Esimerkki vuokrauksesta -->
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="img/akseli.JPG" class="img-responsive profile">
+                    <br>
+                    <h4>AKSELI JAARA</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="img/teemu.JPG" class="img-responsive profile">
+                    <br>
+                    <h4>TEEMU HYYTIÄINEN</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="img/miika.JPG" class="img-responsive profile">
+                    <br>
+                    <h4>MIIKA KULMALA</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="img/ville.JPG" class="img-responsive profile">
+                    <br>
+                    <h4>VILLE YLI-PELKONEN</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc velit, dictum sit amet ante sit amet, malesuada tristique sapien. Mauris bibendum ullamcorper efficitur. Morbi ac eros at purus consequat aliquam ullamcorper nec odio. Vivamus id augue ut nulla venenatis sollicitudin. Nullam ultricies orci placerat, luctus nunc ac, consequat erat. Phasellus ut viverra erat, eget venenatis felis. Pellentesque aliquam erat nunc, ut tristique sapien pretium eu. Nulla semper dictum nisi vel bibendum. </p>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 id="contact">Ota yhteyttä</h3>
+                <br>
+                <h4>Info tähän</h4>
+                <br>
+            </div>
+            <div class="col-sm-4">
+                <h3>Seuraa meitä</h3>
+                <a href="https://www.facebook.com/Araund-1501712536628451/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/araundjkl/" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/araund/about/" class="fa fa-linkedin"></a>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/logowhite.png" class="icon">
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
